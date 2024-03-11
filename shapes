@@ -1,0 +1,28 @@
+
+class Shapes {
+	
+	void perimeter() {
+		System.out.println("Value of Perimeter");
+	}
+
+}
+
+class circle extends Shapes{
+	public static void main(String args[]) {
+		circle obj = new circle();
+		obj.perimeter();
+	}
+}
+
+class Square extends Shapes{
+	
+	public static void main(String args[]) {
+		
+		Square obj = new Square();
+		
+		obj.perimeter();
+		
+		
+	}
+
+}
