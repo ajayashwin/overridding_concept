@@ -1,22 +1,25 @@
-
-class Shapes {
+class shapes {
 	
 	void perimeter() {
-		System.out.println("Value of Perimeter");
+		System.out.println("value");
 	}
 
 }
 
-class circle extends Shapes{
-	public static void main(String args[]) {
-		circle obj = new circle();
-		obj.perimeter();
-	}
-}
-
-class Square extends Shapes{
+class Circle extends shapes{
 	
-	public static void main(String args[]) {
+	void perimeter(int r) {
+		System.out.println("perimeter of Circle: "+(2*(22/7)*(r)));
+	}
+	public static void main(String[]args) {
+		Circle obj = new Circle();
+		obj.perimeter(4);
+	}
+}
+
+class Square extends shapes{
+	
+	public static void main(String[]args) {
 		
 		Square obj = new Square();
 		
@@ -24,5 +27,4 @@ class Square extends Shapes{
 		
 		
 	}
-
 }
